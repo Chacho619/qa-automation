@@ -1,0 +1,17 @@
+{
+  "name": "liverpool-qa-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Examen QA: JavaScript, Selenium WebDriver y Page Object Model",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test tests/unit/domain.test.js tests/unit/waits.test.js tests/unit/login.test.js",
+    "test:e2e": "node --env-file-if-exists=.env --test --test-concurrency=1 tests/e2e/shopping.test.js",
+    "session": "node --env-file-if-exists=.env scripts/session.js",
+    "session:manual": "node --env-file-if-exists=.env scripts/session.js --manual",
+    "inspect": "node --env-file-if-exists=.env scripts/inspect.js",
+    "check": "node scripts/check.js"
+  },
+  "dependencies": { "selenium-webdriver": "4.49.0" }
+}

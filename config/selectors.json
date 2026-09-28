@@ -1,0 +1,21 @@
+{
+  "loginEntry": {"xpath":"//button[normalize-space(.)='Inicia sesión']"},
+  "loginUsername": {"css":"input[name='username'], input[type='email']"},
+  "loginPassword": {"css":"input[type='password']"},
+  "loginSubmit": {"xpath":"//button[normalize-space(.)='Iniciar sesión']"},
+  "loginError": {"css":"#error-element-password, #error-element-username, [role='alert']"},
+  "search": {"css":"input[type='search'], input[placeholder*='Buscar por producto']"},
+  "results": {"css":"a[href*='/tienda/pdp/']"},
+  "title": {"css":"h1"},
+  "sizeToggle": {"xpath":"//button[contains(normalize-space(.), 'Tamaño:')]"},
+  "add": {"xpath":"//button[normalize-space(.)='Agregar a mi bolsa']"},
+  "added": {"xpath":"//*[self::p or self::h2 or self::h3 or @role='status'][contains(normalize-space(.),'Agregaste') or contains(normalize-space(.),'agregado a tu bolsa') or contains(normalize-space(.),'agregado a mi bolsa')]"},
+  "cartLink": {"css":"a[href='/tienda/cart'], a[href='https://www.liverpool.com.mx/tienda/cart']"},
+  "authenticated": {"xpath":"//*[self::a or self::button][contains(normalize-space(.), 'Hola,')]"},
+  "emptyCart": {"xpath":"//*[normalize-space(.)='No hay artículos en la bolsa' and not(.//*[normalize-space(.)='No hay artículos en la bolsa'])]"},
+  "cartRows": {"xpath":"//a[contains(@href,'/tienda/pdp/')]/ancestor::*[.//input[@aria-label='cantidad'] or .//select[contains(@aria-label,'Cantidad')]][1]"},
+  "cartProductLink": {"css":"a[href*='/tienda/pdp/']"},
+  "cartQuantity": {"css":"input[aria-label='cantidad'], select[aria-label*='Cantidad']"},
+  "buyNow": {"xpath":"//*[self::button or self::a][normalize-space(.)='Comprar ahora']"},
+  "checkout": {"xpath":"//*[self::h1 or self::h2][normalize-space(.)='Entrega' or normalize-space(.)='Dirección de entrega']"}
+}

@@ -1,0 +1,8 @@
+[
+  {"id":"botas","query":"botas hombre","include":["\\bbota\\b","hombre"],"exclude":["mujer","niño"],"size":"27","variants":[]},
+  {"id":"mocasines","query":"mocasines hombre","include":["mocasin","hombre"],"exclude":["mujer","niño"],"size":"27","variants":[]},
+  {"id":"perfume","query":"perfume","include":["perfume"],"exclude":["miniatura","muestra","decant"],"variants":[]},
+  {"id":"lenovo","query":"laptop Lenovo","include":["lenovo","laptop|computadora"],"exclude":["funda","mochila","cargador","reacondicionado"],"variants":[]},
+  {"id":"sony","query":"pantalla Sony","include":["sony","pantalla|smart tv"],"exclude":["soporte","control remoto"],"variants":[]},
+  {"id":"xbox","query":"consola Xbox","include":["xbox","consola"],"exclude":["control","audifono","tarjeta","juego para","base para"],"variants":[]}
+]

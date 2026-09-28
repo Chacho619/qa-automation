@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.session/
+artifacts/
+config/*.local.json
+data/*.local.json
+*.log
